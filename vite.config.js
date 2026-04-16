@@ -16,11 +16,10 @@ export default defineConfig({
         description: 'Aplicație fitness acasă',
         theme_color: '#0f172a',
         background_color: '#f4f6f8',
-
         display: 'standalone',
+        display_override: ['standalone'],
         start_url: '/',
-        scope: '/',   // 🔥 AICI AM ADĂUGAT
-
+        scope: '/',
         icons: [
           {
             src: '/pwa-192.png',
@@ -36,7 +35,7 @@ export default defineConfig({
             src: '/pwa-512.png',
             sizes: '512x512',
             type: 'image/png',
-            purpose: 'any maskable'   // 🔥 IMPORTANT pentru Android
+            purpose: 'any maskable'
           }
         ]
       }
